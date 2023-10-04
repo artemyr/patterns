@@ -2,31 +2,54 @@
 
 namespace App;
 
-use App\AbstractFactory\AbstractFactory;
-use App\AbstractFactory\ConcreteFactory1;
-use App\AbstractFactory\ConcreteFactory2;
+use App\PHPTemplateFactory\PHPTemplateFactory;
+use App\TwigTemplateFactory\TwigTemplateFactory;
 
 /**
- * Клиентский код работает с фабриками и продуктами только через абстрактные
- * типы: Абстрактная Фабрика и Абстрактный Продукт. Это позволяет передавать
- * любой подкласс фабрики или продукта клиентскому коду, не нарушая его.
+ * Клиентский код. Обратите внимание, что он принимает класс Абстрактной Фабрики
+ * в качестве параметра, что позволяет клиенту работать с любым типом конкретной
+ * фабрики.
  */
-function clientCode(AbstractFactory $factory)
+class Page
 {
-    $productA = $factory->createProductA();
-    $productB = $factory->createProductB();
 
-    echo $productB->usefulFunctionB() . "<br>";
-    echo $productB->anotherUsefulFunctionB($productA) . "<br>";
+    public $title;
+
+    public $content;
+
+    public function __construct($title, $content)
+    {
+        $this->title = $title;
+        $this->content = $content;
+    }
+
+    // Вот как вы бы использовали этот шаблон в дальнейшем. Обратите внимание,
+    // что класс страницы не зависит ни от классов шаблонов, ни от классов
+    // отрисовки.
+    public function render(TemplateFactory $factory): string
+    {
+        $pageTemplate = $factory->createPageTemplate();
+
+        $renderer = $factory->getRenderer();
+
+        return $renderer->render($pageTemplate->getTemplateString(), [
+            'title' => $this->title,
+            'content' => $this->content
+        ]);
+    }
 }
 
 /**
- * Клиентский код может работать с любым конкретным классом фабрики.
+ * Теперь в других частях приложения клиентский код может принимать фабричные
+ * объекты любого типа.
  */
-echo "Client: Testing client code with the first factory type:<br>";
-clientCode(new ConcreteFactory1());
+$page = new Page('Sample page', 'This is the body.');
 
-echo "<br>";
+echo "Testing actual rendering with the PHPTemplate factory:\n";
+echo $page->render(new PHPTemplateFactory());
 
-echo "Client: Testing the same client code with the second factory type:<br>";
-clientCode(new ConcreteFactory2());
+
+// Можете убрать комментарии, если у вас установлен Twig.
+
+ echo "Testing rendering with the Twig factory:\n";
+ echo $page->render(new TwigTemplateFactory());
