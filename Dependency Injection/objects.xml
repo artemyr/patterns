@@ -1,0 +1,10 @@
+<objects>
+    <class name="TerrainFactory">
+        <arg num="0" inst="EarthSea" />
+        <arg num="1" inst="MarsPlains" />
+        <arg num="2" inst="EarthForest" />
+    </class>
+    <class name="AppointmentMarker2">
+        <arg num="0" inst="BloggsApptEncoder" />
+    </class>
+</objects>
