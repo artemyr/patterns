@@ -7,3 +7,5 @@
 <article>Шаблоны для программирования гибких объектов</article>
 <a href="/flexible objects/Composite/">Composite</a><br>
 <a href="/flexible objects/Decorator/">Decorator</a><br>
+<a href="/flexible objects/Facade/">Facade</a><br>
+<article>Выполнение задач и представление результатов</article>
