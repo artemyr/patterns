@@ -1,3 +1,4 @@
-<a href="/Factory Method.php">Factory Method.php</a>
-<a href="/Abstract Factory/">Abstract Factory</a>
-<a href="/Prototype/">Prototype</a>
+<a href="/Factory Method.php">Factory Method.php</a><br>
+<a href="/Abstract Factory/">Abstract Factory</a><br>
+<a href="/Prototype/">Prototype</a><br>
+<a href="/Service Locator/">Service Locator</a><br>
