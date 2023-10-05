@@ -4,3 +4,5 @@
 <a href="/create objects/Prototype/">Prototype</a><br>
 <a href="/create objects/Service Locator/">Service Locator</a><br>
 <a href="/create objects/Dependency Injection/">Dependency Injection</a><br>
+<article>Шаблоны для программирования гибких объектов</article>
+<a href="/flexible objects/Composite/">Composite</a><br>
