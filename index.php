@@ -6,3 +6,4 @@
 <a href="/create objects/Dependency Injection/">Dependency Injection</a><br>
 <article>Шаблоны для программирования гибких объектов</article>
 <a href="/flexible objects/Composite/">Composite</a><br>
+<a href="/flexible objects/Decorator/">Decorator</a><br>
