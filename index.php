@@ -9,3 +9,4 @@
 <a href="/flexible objects/Decorator/">Decorator</a><br>
 <a href="/flexible objects/Facade/">Facade</a><br>
 <article>Выполнение задач и представление результатов</article>
+<a href="/perform tasks and present results/Visitor/">Visitor</a><br>
