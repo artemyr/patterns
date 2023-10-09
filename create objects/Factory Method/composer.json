@@ -1,0 +1,8 @@
+{
+  "name": "patterns/factory_method",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}
