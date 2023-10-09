@@ -1,7 +1,7 @@
 <?php
 
-use App\Ferrari\FerrariFactory;
-use App\Lambo\LamboFactory;
+use App\Car\Ferrari\FerrariFactory;
+use App\Car\Lambo\LamboFactory;
 
 $factory = new FerrariFactory();
 $car = $factory->createCar();

@@ -1,11 +1,11 @@
 <?php
-namespace App\Lambo;
+namespace App\Car\Lambo;
 
+use App\Car\CarInterface;
 use App\Car\CarFactory;
-use App\Car\Car;
 
 class LamboFactory implements CarFactory {
-    public function createCar(): Car {
+    public function createCar(): CarInterface {
         return new Lambo();
     }
 }

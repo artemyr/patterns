@@ -1,5 +1,5 @@
 <?php
 namespace App\Car;
 interface CarFactory {
-    public function createCar(): Car;
+    public function createCar(): CarInterface;
 }

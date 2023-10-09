@@ -1,5 +1,5 @@
 <?php
 namespace App\Car;
-interface Car {
+interface CarInterface {
     public function start(): void;
 }
