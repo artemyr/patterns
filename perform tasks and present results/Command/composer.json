@@ -1,0 +1,8 @@
+{
+  "name": "patterns/command",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}

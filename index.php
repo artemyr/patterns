@@ -13,3 +13,4 @@
 <a href="/perform tasks and present results/Visitor/">Visitor</a><br>
 <a href="/perform tasks and present results/Strategy/">Strategy</a><br>
 <a href="/perform tasks and present results/Observer/">Observer</a><br>
+<a href="/perform tasks and present results/Command/">Command</a><br>
