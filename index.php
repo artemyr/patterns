@@ -1,4 +1,5 @@
 <article>Формирование объектов</article>
+<a href="/create objects/Singleton/">Singleton</a><br>
 <a href="/create objects/Factory Method/">Factory Method</a><br>
 <a href="/create objects/Abstract Factory/">Abstract Factory</a><br>
 <a href="/create objects/Prototype/">Prototype</a><br>
