@@ -14,3 +14,7 @@
 <a href="/perform tasks and present results/Strategy/">Strategy</a><br>
 <a href="/perform tasks and present results/Observer/">Observer</a><br>
 <a href="/perform tasks and present results/Command/">Command</a><br>
+<article>Шаблоны корпаративных приложений</article>
+<a href="/applications patterns/FrontController/">FrontController</a><br>
+<a href="/applications patterns/ApplicationController/">ApplicationController</a><br>
+<a href="/applications patterns/PageController/">PageController</a><br>
